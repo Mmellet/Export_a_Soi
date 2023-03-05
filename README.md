@@ -1,13 +1,17 @@
 # Export_a_Soi
-Repository pour export pandoc Md vers PDF avec template LateX
+Repository pour export pandoc Md vers PDF avec template LateX.
 
 Ce qu'il contient : 
 
-- texte.md : fichier pour le corps de texte incluant les métadonnées (YAML)
-- bib.bib : fichier pour la bibliographie
-- template1.tex : template LaTeX pour la mise en page de l'Udem
-- template2.tex : template LaTeX pour la mise en page d'une proposition d'article
-- 2 fichiers de style bibliographique : udem-apa.csl et chicago-author-date.csl
+- `texte.md` : fichier pour le corps de texte incluant les métadonnées (YAML)
+- `bib.bib` : fichier pour la bibliographie (Bibtex)
+- 2 templates LaTeX
+    - `template1.latex` : template avec la mise en page de l'Udem
+    - `template2.latex` : template avec la mise en page d'une proposition d'article
+- 2 fichiers de style bibliographique : `udem-apa.csl` et `chicago-author-date.csl`
+- 1 dossier `media` pour les images
+
+Nécessaire pour l'exercice : pandoc, latex, xelatex, git. 
 
 ## Rédaction/Édition
 
@@ -41,6 +45,9 @@ nocite: '@*'
 2. Corps de texte 
 
 Rédiger votre proposition de projet d'écriture. 
+
+- Besoin d'écriture
+- Inspiration
 
 400-500 mots. 
 
@@ -210,3 +217,5 @@ Uploader l'image dans le bon dossier (*media*).
 ```
 ![légende](chemin)
 ```
+
+*En +* : Je peux changer l'image de page de garde (seulement dans le Template 1) en uploadant une image dans `media/` au nom de `logo.png`. 
