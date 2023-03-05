@@ -1,10 +1,10 @@
 # Export_a_Soi
-Repository pour export pandoc Md vers PDF avec template LateX.
+Repository pour export pandoc Md vers PDF avec template LaTeX.
 
 Ce qu'il contient : 
 
 - `texte.md` : fichier pour le corps de texte incluant les métadonnées (YAML)
-- `bib.bib` : fichier pour la bibliographie (Bibtex)
+- `bib.bib` : fichier pour la bibliographie (BibTeX)
 - 2 templates LaTeX
     - `template1.latex` : template avec la mise en page de l'Udem
     - `template2.latex` : template avec la mise en page d'une proposition d'article
@@ -44,12 +44,11 @@ nocite: '@*'
 ---
 ```
 
-Si des clefs ne sont pas nécessaires : laissez-les vides mais ne les supprimez pas. 
+Si des clefs ne vous sont pas nécessaires : laissez-les vides mais ne les supprimez pas. 
 
 ```
 subtitle: 
 ```
-
 
 2. Corps de texte 
 
@@ -57,6 +56,7 @@ Rédiger votre proposition de projet d'écriture.
 
 - Besoin d'écriture
 - Inspiration
+- Objectifs (technique, éditorial ou personnel)
 
 400-500 mots. 
 
@@ -65,16 +65,16 @@ Rédiger votre proposition de projet d'écriture.
 Si nécessaire, éditer votre texte (italique, mise en gras, tirets longs, hyperliens, références, niveaux de titre, appels de note, etc.).
 
 **Rappel**
-
-- Le dernier titre doit être celui de la bibliographie
+- Le dernier titre dans votre texte doit être celui de la bibliographie
 - Pas de titre de niveau 1 dans le corps du texte
+- Séparation des paragraphes par un saut de ligne
 
 
 ## Conversion/Production
 
 Dans votre terminal, 
 
-1. Md vers Tex
+1. Md vers TeX
 
 Lancer la commande selon vos choix de template et de style bibliographique : 
 
@@ -86,9 +86,9 @@ Si vous souhaitez convertir avec le template 2, il faut remplacer `template1.md`
 
 Si vous souhaitez le style bibliographique de Chicago, il faut remplacer `udem-apa.csl` par `chicago-author-date.csl`.
 
-*Durant la conversion, beaucoup de fichiers vont être créés, il faut les conserver mais ils ne nous intéressent pas en tant que tels.*
+*Durant la conversion, beaucoup de fichiers vont être créés, il faut les conserver même si vous n'en aurez pas d'utilité directe.*
 
-2. Tex vers PDF
+2. TeX vers PDF
 
 Lancer la commande suivante : 
 
@@ -144,23 +144,31 @@ git status
 
 ## Conseils 
 
-Rappel : Votre terminal est votre ami, ce qui ne veut pas dire qu'il vous aime mais qu'il vous informe quand il y a une erreur dans les fichiers.tex si vous avez modifié le template. 
+**Rappel** : Votre terminal est votre ami, ce qui ne veut pas dire qu'il vous aime mais qu'il vous informe quand il y a une erreur dans les fichiers qui empêchent la bonne conversion. 
 
 Astuce : pour corriger les erreurs, vous pouvez utiliser la plateforme [Overleaf](https://fr.overleaf.com/).
 
+Si la sortie PDF n'affiche pas vos modifications : 
+- vérifier que la commande est bien structurée et passe bien dans le terminal
+- relancer la commande
+- laisser du temps entre les deux commandes (pandoc et xelatex)
+- relancer la commande
 
+**Erreurs fréquentes** 
+- problème d'indentation dans les métadonnées (le yaml est un être sensible)
+- problème de balisage dans le template si modifié (le latex est également sensible)
 
 ## Pour aller plus loin (Facultatif)
 
-#### Je souhaite citer des références dans le texte 
+### Je souhaite citer des références dans le texte 
 
 Même édition que dans Stylo : il faut insérer la clef bibtex à l'endroit souhaité. 
 
-#### Je souhaite un autre style bibliographique : 
+### Je souhaite un autre style bibliographique : 
 
 - importer le fichier du style bibliographique en .csl dans le dossier et modifier la commande selon le nom du fichier de style bibliographique 
 
-#### Je souhaite séparer ma bibliographie de mon corps de texte 
+### Je souhaite séparer ma bibliographie de mon corps de texte 
 
 Deux possibilités : 
 
@@ -189,7 +197,7 @@ Deux possibilités :
 
 *La deuxième option force à refaire l'opération après chaque conversion md vers tex.*
 
-#### Je souhaite changer les couleurs utilisées 
+### Je souhaite changer les couleurs utilisées 
  
 Choisir la couleur à partir des labels listés [ici](https://www.latextemplates.com/svgnames-colors).
 
@@ -217,7 +225,7 @@ modifier la ligne 237 pour le trait de haut de page.
 \color{TealBlue}\hrule
 ```
 
-#### Je souhaite ajouter une image 
+### Je souhaite ajouter une image 
 
 Uploader l'image dans le bon dossier (*media*).
 
