@@ -13,6 +13,8 @@ Ce qu'il contient :
 
 Nécessaire pour l'exercice : pandoc, latex, xelatex, git. 
 
+Édition dans VsCodium.
+
 ## Rédaction/Édition
 
 Éditer le texte.md avec les informations suivantes : 
@@ -41,6 +43,13 @@ cours:
 nocite: '@*'
 ---
 ```
+
+Si des clefs ne sont pas nécessaires : laissez-les vides mais ne les supprimez pas. 
+
+```
+subtitle: 
+```
+
 
 2. Corps de texte 
 
