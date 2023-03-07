@@ -15,6 +15,29 @@ Nécessaire pour l'exercice : pandoc, latex, xelatex, git.
 
 Édition dans VsCodium.
 
+## Avant toute modification 
+
+Dans le terminal,
+
+Premier réflexe : 
+
+```
+git pull
+
+```
+
+Se placer sur sa branche (le nom de la branche est ici *margot*) : 
+
+```
+git switch margot
+```
+
+Deuxième réflexe : 
+
+```
+git pull
+```
+
 ## Rédaction/Édition
 
 Éditer le texte.md avec les informations suivantes : 
@@ -69,6 +92,7 @@ Si nécessaire, éditer votre texte (italique, mise en gras, tirets longs, hyper
 - Pas de titre de niveau 1 dans le corps du texte
 - Séparation des paragraphes par un saut de ligne
 
+**Sauvegarde avant les conversions.**
 
 ## Conversion/Production
 
@@ -88,49 +112,30 @@ Si vous souhaitez le style bibliographique de Chicago, il faut remplacer `udem-a
 
 *Durant la conversion, beaucoup de fichiers vont être créés, il faut les conserver même si vous n'en aurez pas d'utilité directe.*
 
-2. TeX vers PDF
-
-Lancer la commande suivante : 
-
-```
-xelatex texte.tex 
-```
+2. LaTeX vers PDF
+(à la séance prochaine)
 
 **Rappel** 
 - Si vous changez les noms des fichiers, il faut les changer dans les commandes. 
 
 ## Gestion/Diffusion 
 
-Vous allez maintenant pusher votre PDF sur le repository *Export à soi* sur votre propre branche. 
+Pour pusher vos modifications sur le repository *Export à soi* sur votre propre branche. 
 
-Pour ce faire : 
-
-Premier réflexe : 
-
-```
-git pull
-
-```
-
-Se placer sur sa branche (le nom de la branche est ici *margot*) : 
-
-```
-git switch margot
-```
 
 Ajouter ses modifications : 
 
 ```
-git add sichiers_modifiés.extension
+git add texte.tex
 ```
 
 Commiter ses modifications : 
 
 ```
-git commit -m "mon commentaire qui décrit ce que j'ai fait"
+git commit -m "mon bon commit qui décrit ce que j'ai fait"
 ```
 
-Pusher ses modifitions : 
+Pusher ses modifitions (remplacer "margot" par le nom de votre branch)
 
 ```
 git push --set-upstream origin margot_by_switch
@@ -145,14 +150,6 @@ git status
 ## Conseils 
 
 **Rappel** : Votre terminal est votre ami, ce qui ne veut pas dire qu'il vous aime mais qu'il vous informe quand il y a une erreur dans les fichiers qui empêchent la bonne conversion. 
-
-Astuce : pour corriger les erreurs, vous pouvez utiliser la plateforme [Overleaf](https://fr.overleaf.com/).
-
-Si la sortie PDF n'affiche pas vos modifications : 
-- vérifier que la commande est bien structurée et passe bien dans le terminal
-- relancer la commande
-- laisser du temps entre les deux commandes (pandoc et xelatex)
-- relancer la commande
 
 **Erreurs fréquentes** 
 - problème d'indentation dans les métadonnées (le yaml est un être sensible)
