@@ -24,7 +24,7 @@ nocite: '@*'
 J’aimerais dédier mon article à la pomme de terre. À première vue, ce sujet peut sembler un peu étrange, mais il y a une raison très concrète derrière ce choix de sujet. En fait, je viens d’Allemagne et on me demande donc souvent ce que sont les plats allemands typiques. À cela, je réponds toujours que chaque plat avec des pommes de terre est typiquement allemand. Après cela, on me demande toujours de donner quelques exemples et d’expliquer comment préparer ces plats. Cependant, la plupart des personnes ne peuvent plus me suivre jusque-là parce qu’ils ne connaissent pas du tout ces nombreux plats différents avec des pommes de terre et ne comprennent pas ce que j’entends, par exemple, par [*Kartoffelpuffer*](https://fr.wikipedia.org/wiki/Galette_de_pommes_de_terre) et pourquoi je les aime tant.
 ![Kartoffelpuffer](/media/Kartoffelpuffer.jpg)
 
-En outre, 19  % des Allemands mangent de la salade de pommes de terre à Noël et en Allemagne de l’Est, c’est même 40  %[^1]. En revanche, ici à Montréal, plusieurs amis sont venus me voir complètement désemparés av leurs pommes de terre puisqu’ils ne savent tout simplement pas comment les préparer. Par conséquent, je voudrais les aider avec mon article numérique et leur montrer à quel point les recettes avec des pommes de terre sont faciles à préparer et à quel point elles sont délicieuses. En général, j’aimerais utiliser mon projet pour rapprocher la cuisine allemande de mes nombreux amis étrangers. Je souhaite souligner à quel point la pomme de terre et la cuisine allemande sont diversifiées et pourquoi nous mangeons des pommes de terre plusieurs fois par semaine en Allemagne.
+En outre, 19  % des Allemands mangent de la salade de pommes de terre à Noël et en Allemagne de l’Est, c’est même 40  %[^1][@WarumBockwurstUnd]. En revanche, ici à Montréal, plusieurs amis sont venus me voir complètement désemparés av leurs pommes de terre puisqu’ils ne savent tout simplement pas comment les préparer. Par conséquent, je voudrais les aider avec mon article numérique et leur montrer à quel point les recettes avec des pommes de terre sont faciles à préparer et à quel point elles sont délicieuses. En général, j’aimerais utiliser mon projet pour rapprocher la cuisine allemande de mes nombreux amis étrangers. Je souhaite souligner à quel point la pomme de terre et la cuisine allemande sont diversifiées et pourquoi nous mangeons des pommes de terre plusieurs fois par semaine en Allemagne.
 
 **Objectifs et Inspiration  :**
 
@@ -35,3 +35,6 @@ Dans mon article, j’imagine présenter non seulement des recettes allemandes t
 \newpage
 
 ## Bibliographie
+
+[/PropositionBibliographie.bib]
+
