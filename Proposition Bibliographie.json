@@ -1,0 +1,79 @@
+[
+	{
+		"id": "GalettePommesTerre2023",
+		"type": "entry-encyclopedia",
+		"abstract": "La galette de pommes de terre est une spécialité culinaire à base de pommes de terre râpées, généralement frites à la poêle. Les recettes en sont multiples selon les régions ; elles peuvent associer des œufs et des lamelles d'oignons ou d’autres ingrédients. La galette peut être recouverte de diverses sauces, aigres (avec diverses sortes de fromages) ou douces, (coulis de pommes avec ou sans cannelle) et confectionnée à partir de pommes de terre pelées, coupées, ou accommodées en brunoise, ressemblant alors fortement aux hash browns (en) américains.",
+		"container-title": "Wikipédia",
+		"language": "fr",
+		"license": "Creative Commons Attribution-ShareAlike License",
+		"note": "Page Version ID: 201075902",
+		"source": "Wikipedia",
+		"title": "Galette de pommes de terre",
+		"URL": "https://fr.wikipedia.org/w/index.php?title=Galette_de_pommes_de_terre&oldid=201075902",
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					3,
+					8
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					2,
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "WarumBockwurstUnd",
+		"type": "webpage",
+		"title": "Warum bockwurst und kartoffelsalat zu weihnachten?",
+		"URL": "https://alleantworten.de/warum-bockwurst-und-kartoffelsalat-zu-weihnachten",
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					3,
+					8
+				]
+			]
+		}
+	},
+	{
+		"id": "maciarkaSlovencinaZemiakovePlacky1899",
+		"type": "graphic",
+		"archive": "Own work",
+		"source": "Wikimedia Commons",
+		"title": "Slovenčina:  Zemiakové placky ゼミアコベー・プラツキー",
+		"title-short": "Slovenčina",
+		"URL": "https://commons.wikimedia.org/wiki/File:Zemiakov%C3%A9_placky_%E3%82%BC%E3%83%9F%E3%82%A2%E3%82%B3%E3%83%99%E3%83%BC%E3%83%BB%E3%83%97%E3%83%A9%E3%83%84%E3%82%AD%E3%83%BC.JPG",
+		"author": [
+			{
+				"literal": "Maciarka"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					3,
+					8
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1899",
+					11,
+					30
+				]
+			]
+		}
+	}
+]
