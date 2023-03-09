@@ -35,3 +35,6 @@ Dans mon article, j’imagine présenter non seulement des recettes allemandes t
 \newpage
 
 ## Bibliographie
+
+[/bib.bib]
+
