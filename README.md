@@ -11,7 +11,7 @@ Ce qu'il contient :
 - 2 fichiers de style bibliographique : `udem-apa.csl` et `chicago-author-date.csl`
 - 1 dossier `media` pour les images
 
-Nécessaire pour l'exercice : pandoc, latex, xelatex, git. 
+Nécessaire pour l'exercice : pandoc, git, compte overleaf. 
 
 Édition dans VsCodium.
 
@@ -135,17 +135,28 @@ Commiter ses modifications :
 git commit -m "mon bon commit qui décrit ce que j'ai fait"
 ```
 
-Pusher ses modifitions (remplacer "margot" par le nom de votre branch)
+Pusher ses modifitions une première fois (remplacer "margot" par le nom de votre branch)
 
 ```
 git push --set-upstream origin margot_by_switch
 ```
+
+Pour les push suivants : 
+
+```
+git push
+```
+
 
 Pour vérifier que tout est à jour sur sa branche : 
 
 ```
 git status
 ```
+
+2. LaTeX vers PDF 
+
+- produire le PDF via Overleaf
 
 ## Conseils 
 
@@ -231,5 +242,7 @@ Uploader l'image dans le bon dossier (*media*).
 ```
 ![légende](chemin)
 ```
+
+Pour que l'image apparaisse dans la PDF : ne pas oublier d'uploader l'image dans l'espace projet d'Overleaf.
 
 *En +* : Je peux changer l'image de page de garde (seulement dans le Template 1) en uploadant une image dans `media/` au nom de `logo.png`. 
