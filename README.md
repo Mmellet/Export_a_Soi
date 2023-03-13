@@ -32,6 +32,12 @@ Se placer sur sa branche (le nom de la branche est ici *margot*) :
 git switch margot
 ```
 
+ou 
+
+```
+git checkout -b margot
+```
+
 Deuxième réflexe : 
 
 ```
@@ -138,7 +144,7 @@ git commit -m "mon bon commit qui décrit ce que j'ai fait"
 Pusher ses modifitions une première fois (remplacer "margot" par le nom de votre branch)
 
 ```
-git push --set-upstream origin margot_by_switch
+git push --set-upstream origin margot
 ```
 
 Pour les push suivants : 
