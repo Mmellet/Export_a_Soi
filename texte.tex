@@ -1,0 +1,202 @@
+\documentclass[12pt,french,letterpaper]{article}
+%déclaration du document 
+
+\usepackage[T1]{fontenc}
+%package pour police
+\usepackage[utf8]{inputenc}
+%package pour police
+
+\usepackage[document]{ragged2e}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{biblatex}
+\usepackage{csquotes}
+
+\usepackage{mathptmx}%choix de la police mathptmx = Times
+
+\usepackage[dvipsnames,svgnames]{xcolor}%chois pour les couleurs
+
+
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+  \origfigure[H]
+}{%
+  \endorigfigure
+}
+
+\usepackage{epigraph}
+\usepackage{fancyhdr}
+
+
+\providecommand{\subtitle}[1]{}
+\subtitle{correspondance}
+\author{Alexya    Morin    Université de Montréal }
+\providecommand{\cours}[1]{}
+\cours{FRA3825 Pratiques de l'édition numérique}
+\cours{}
+\date{}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\rhead{}
+\cfoot{Page \thepage}
+
+\usepackage{graphicx}%package pour la gestion des images
+\graphicspath{ {./media/} }%chemin des figures
+
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+
+
+\else % if luatex or xelatex
+
+  \usepackage{unicode-math}
+
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={Travail final : correspondance},
+            pdfauthor={Alexya ,  Morin,  },
+            colorlinks=true,
+            urlcolor= RoyalBlue, 
+	          linkcolor= Blue,
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+
+
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+\begin{document}%début de mon document
+
+\begin{titlepage}%début de ma page de titre
+\begin{center}
+    \enlargethispage{2cm}
+    
+\includegraphics[width = 50mm]{logo} %ajout de l'image en taille logo
+%si le logo ne fonctionne pas : 
+%\scshape{Université de Montréal} %utilisation des small caps 
+
+\vspace*{3cm}
+\scshape\Huge Travail final\\
+\normalfont\Large correspondance\\
+\large \vspace*{3cm}
+Alexya,  Morin,  
+\\
+\normalsize\vspace*{1cm}Travail présenté dans le cadre du cours FRA3825 - \em Pratiques
+de l'édition numérique
+ \normalfont donné par Margot Mellet 
+
+\vspace*{3cm}
+\end{center}
+
+\vspace*{\fill}
+\begin{flushright}
+\end{flushright}
+
+\begin{center}
+\scshape\normalsize\vspace*{1cm} 21-Mars-2023 --      Université de
+Montréal 
+\\
+\end{center}
+\end{titlepage}
+
+
+
+
+\newpage 
+
+\normalsize{Dans le cadre du travail final, je souhaite créer un espace
+d'écriture dédié à mes correspondances. Je me suis intéressée à cette
+pratique pendant le printemps du premier confinement grâce à des vidéos
+sur \href{https://www.youtube.com/watch?v=rIzuVqS3W7o}{YouTube} et
+\href{https://www.tiktok.com/@ihearttgiraffes/video/7042062179218017582?is_from_webapp=1\&sender_device=pc\&web_id=7179212705482933766}{TikTok}
+qui évoquent le côté artistique et relaxant de ce passe-temps. La
+majorité de ce contenu présente les bases de la correspondance liées à
+une esthétique soignée qui met en valeur leurs collections personnelles
+d'articles de papeterie. Ce projet était un moyen pour moi de contrer
+l'ennui et d'améliorer mon anglais à l'écrit en échangeant avec des
+anglophones, mais je l'ai délaissé dès que je suis retournée à l'école
+en présentiel. J'ai reçu au total douze lettres entre mai et octobre
+2020 provenant de sept individus différents qui habitent soit au Canada,
+aux États-Unis, en Australie ou en Écosse. Donc, cette plateforme
+servira à préserver ces textes dans le but de recommencer à pratiquer
+cette activité régulièrement afin d'interagir avec de nouvelles
+personnes. Il serait également pertinent de les répertorier selon le
+lieu ainsi que l'expéditeur et, si ce n'est pas trop ambitieux, d'avoir
+une carte du monde avec des points d'intérêts cliquables associés à
+l'adresse d'origine des lettres. De plus, je veux que cet espace adopte
+une interface volontairement rétro pour souligner l'aspect désuet de la
+correspondance, comme le site \href{https://spacehey.com/}{SpaceHey}.
+Lancé en novembre 2020, ce réseau social qui reprend les codes de
+Myspace aspire à devenir une alternative aux géants du numérique tels
+que Facebook, Instagram ou encore Twitter qui collectent les données
+personnelles des utilisateurs. Pour finir, j'ai cherché une plateforme
+semblable à mon idée de projet pour le travail final. J'ai trouvé un
+\href{https://wish-uwerehere.tumblr.com/}{compte Tumblr} qui publiait de
+courts textes sur des choses qui manquaient aux gens pendant la pandémie
+sous la forme de cartes postales et de notes. Cette initiative m'a donné
+envie d'ajouter des images de tout le contenu à l'intérieur des
+enveloppes, incluant notamment les cadeaux, les dessins et les photos
+sur mon espace au lieu de seulement retranscrire les lettres.
+
+\hypertarget{bibliographie}{%
+\subsection{Bibliographie}\label{bibliographie}}}
+
+
+
+\end{document}
