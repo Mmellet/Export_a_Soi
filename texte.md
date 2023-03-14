@@ -6,8 +6,8 @@ author:
 teacher: 
   - forname: Margot
     surname: Mellet
-title: Portraits
-subtitle: sous-titre
+title: Portraits de femmes
+subtitle: - 
 year: 2023
 month: Mars
 day: 21
@@ -20,6 +20,9 @@ nocite: '@*'
 2. Corps de texte 
 
 Rédiger votre proposition de projet d'écriture. 
+
+Mon projet d'écriture sera fait dans le but de m'avancer dans mon idée de projet pour la maitrise. Je compte produire des portraits de femmes, celles qui sont présentent dans les trois livres choisis. J'aimerais aussi faire un espace thématique, pour les éléments 
+Je préfère le deuxième modèle proposé. L'utilisation de tags
 
 - Besoin d'écriture
 - Inspiration
