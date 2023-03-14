@@ -1,0 +1,204 @@
+\documentclass[12pt,french,letterpaper]{article}
+%déclaration du document 
+
+\usepackage[T1]{fontenc}
+%package pour police
+\usepackage[utf8]{inputenc}
+%package pour police
+
+\usepackage[document]{ragged2e}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{biblatex}
+\usepackage{csquotes}
+
+\usepackage{mathptmx}%choix de la police mathptmx = Times
+
+\usepackage[dvipsnames,svgnames]{xcolor}%chois pour les couleurs
+
+
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+  \origfigure[H]
+}{%
+  \endorigfigure
+}
+
+\usepackage{epigraph}
+\usepackage{fancyhdr}
+
+
+\providecommand{\subtitle}[1]{}
+\subtitle{sous-titre}
+\author{Gabrielle    Lahaie    Université de Montréal }
+\providecommand{\cours}[1]{}
+\cours{FRA3825 Pratiques de l'édition numérique}
+\cours{}
+\date{}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\rhead{}
+\cfoot{Page \thepage}
+
+\usepackage{graphicx}%package pour la gestion des images
+\graphicspath{ {./media/} }%chemin des figures
+
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+
+
+\else % if luatex or xelatex
+
+  \usepackage{unicode-math}
+
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={Mon Portfolio : sous-titre},
+            pdfauthor={Gabrielle ,  Lahaie,  },
+            colorlinks=true,
+            urlcolor= RoyalBlue, 
+	          linkcolor= Blue,
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+
+
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+\begin{document}%début de mon document
+
+\begin{titlepage}%début de ma page de titre
+\begin{center}
+    \enlargethispage{2cm}
+    
+\includegraphics[width = 50mm]{logo} %ajout de l'image en taille logo
+%si le logo ne fonctionne pas : 
+%\scshape{Université de Montréal} %utilisation des small caps 
+
+\vspace*{3cm}
+\scshape\Huge Mon Portfolio\\
+\normalfont\Large sous-titre\\
+\large \vspace*{3cm}
+Gabrielle,  Lahaie,  
+\\
+\normalsize\vspace*{1cm}Travail présenté dans le cadre du cours FRA3825 - \em Pratiques
+de l'édition numérique
+ \normalfont donné par Margot Mellet 
+
+\vspace*{3cm}
+\end{center}
+
+\vspace*{\fill}
+\begin{flushright}
+\end{flushright}
+
+\begin{center}
+\scshape\normalsize\vspace*{1cm} 21-Mars-2023 --      Université de
+Montréal 
+\\
+\end{center}
+\end{titlepage}
+
+
+
+
+\newpage 
+
+\normalsize{proposition de projet d'écriture :
+
+\begin{itemize}
+\tightlist
+\item
+  Besoin d'écriture
+\item
+  Inspiration
+\item
+  Objectifs (technique, éditorial ou personnel)
+\end{itemize}
+
+Mes intentions pour mon carnet d'écriture sont personnelles mais dans le
+but de m'exercer à l'édition et les techniques qui l'accompagne. Dans le
+cadre d'un cours d'écriture de scénario nous avons interviewé une
+écrivaine de jeux vidéo qui nous a donné quelques conseils de création
+de portfolio. Elle a insisté sur le fait qu'un site web ainsi qu'un PDF
+est important. Puisque j'aspire au monde des jeux vidéo, la compétition
+est grande et avoir du bon matériel professionnel sous la main en tout
+temps est primordial si on veut avoir la chance d'entrer dans
+l'industrie. À la lumière de ces faits, je souhaite créer un carnet
+d'écriture qui servira de portfolio professionnel de mes écrits pour
+m'aider à trouver un travail après l'université. Ce portfolio comportera
+mes meilleurs extraits d'écrits que je vais éditer. J'aimerais ainsi
+m'entraîner à retravailler des textes considérés ``brouillons'' pour les
+rendre propres et présentables en les éditant comme s'ils seraient
+publiés. Les textes auront la possibilité d'être exportés en PDF pour
+moi-même ou les potentiels recruteurs qui visiteront mon portfolio. Je
+souhaite depuis longtemps créer mon propre portfolio pour plusieurs
+domaines, donc j'aimerais construire des sections pour différents
+métiers, voici ce que je pense en ce moment : une section de texte plus
+en proses, une de scénarios de cinéma/télévision et une pour les
+scénarios de jeux vidéo qui devra être en anglais. Avoir ce portfolio
+sera pour moi une sécurité pour me trouver un emploi mais aussi une
+manière de faire un portrait de moi-même pour voir le niveau où je suis
+présentement. Je veux le garder à jours quand je ferai de meilleurs
+textes, mais conserver des traces de mon progrès dans une section
+cachée.}
+
+
+
+\end{document}
