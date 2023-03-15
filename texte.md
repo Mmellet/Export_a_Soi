@@ -37,5 +37,6 @@ Dans mon article, j’imagine présenter non seulement des recettes allemandes t
 
 ## Bibliographie
 
-Madame Prof. Berg, Renate (2021, 9 janvier). *Warum bockwurst und kartoffelsalat zu weihnachten  ?* alleantworten.s://alleantworten.de/warum-bockwurst-und-kartoffelsalat-zu-weihnachten
+Maciarka (1899, 30 novembre). Zemiakové placky[image en ligne]. Wikimedia Commons. [https://commons.wikimedia.org/wiki/File:Zemiakové_placky_ゼミアコベー・プラツキー.JPG](https://commons.wikimedia.org/wiki/File:Zemiakové_placky_ゼミアコベー・プラツキー.JPG) 
 
+Prof. Berg, Renate (2021, 9 janvier). *Warum bockwurst und kartoffelsalat zu weihnachten  ?* alleantworten. [https://alleantworten.de/warum-bockwurst-und-kartoffelsalat-zu-weihnachten](https://alleantworten.de/warum-bockwurst-und-kartoffelsalat-zu-weihnachten).
