@@ -37,5 +37,5 @@ Dans mon article, j’imagine présenter non seulement des recettes allemandes t
 
 ## Bibliographie
 
-[/bib.bib]
+Madame Prof. Berg, Renate (2021, 9 janvier). *Warum bockwurst und kartoffelsalat zu weihnachten  ?* alleantworten.s://alleantworten.de/warum-bockwurst-und-kartoffelsalat-zu-weihnachten
 
