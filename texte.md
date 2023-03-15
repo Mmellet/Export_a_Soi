@@ -30,6 +30,7 @@ En outre, 19  % des Allemands mangent de la salade de pommes de terre à Noël e
 **Objectifs et Inspiration  :**
 
 Dans mon article, j’imagine présenter non seulement des recettes allemandes typiques avec des pommes de terre, mais aussi informer sur la pomme de terre en général. En conséquence, je discuterai de l’histoire, de la diffusion, des formes et des couleurs de la pomme de terre. Les blogs culinaires et les blogs d’information devraient servir d’inspiration pour moi. Je souhaite rendre mon article très vivant, convivial et accueillant. Afin de mettre cela en œuvre, j’aimerais intégrer de nombreuses images, couleurs et liens qui mènent à des informations supplémentaires. Sinon, je me référai également à des livres de cuisine et des vidéos YouTube qui expliquent comment préparer des plats avec des pommes de terre. De plus, une structure claire de mon article est très importante pour moi. Mon article devrait inviter à s’attarder, à être informatif et divertissant.
+
 [^1]: [@WarumBockwurstUnd]
 
 \newpage
