@@ -109,7 +109,7 @@ Dans votre terminal,
 Lancer la commande selon vos choix de template et de style bibliographique : 
 
 ```
-pandoc --standalone --bibliography=bib.bib --template=template1.latex --csl=udem-apa.csl -f markdown -t latex texte.md -o texte.tex
+pandoc --standalone --bibliography=bib.bib --citeproc --template=template1.latex --csl=udem-apa.csl -f markdown -t latex texte.md -o texte.tex
 ```
 
 Si vous souhaitez convertir avec le template 2, il faut remplacer `template1.md` par `template2.md` dans la commande. 
