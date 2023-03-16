@@ -142,7 +142,7 @@ $if(title-meta)$
             pdftitle={$title-meta$$if(subtitle)$ : $subtitle$$endif$},
 $endif$
 $if(author)$
-            pdfauthor={$for(author)$$author.forname$ $author.surname$$sep$, $endfor$},
+            pdfauthor={$for(author)$$author.forname$ $author.surname$$sep$ $endfor$},
 $endif$
 $if(keywords)$
             pdfkeywords={$for(keywords)$$keywords.list$$sep$, $endfor$},
@@ -252,6 +252,8 @@ $for(header-includes)$
 $header-includes$
 $endfor$
 
+% prevent hyphenation
+\hyphenpenalty=10000
 
 \begin{document}%début de mon document
 
@@ -268,7 +270,7 @@ $endfor$
 \normalfont\Large $subtitle$\\
 \large $if(author)$
 \vspace*{3cm}
-$for(author)$$author.forname$$author.surname$$sep$,  $endfor$
+$for(author)$$author.forname$$author.surname$$sep$ $endfor$
 $endif$\\
 \normalsize\vspace*{1cm}Travail présenté dans le cadre du cours $if(cours)$
 $for(cours)$$cours.id$ - \em $cours.title$$sep$, $endfor$

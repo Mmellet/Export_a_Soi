@@ -1,0 +1,286 @@
+\documentclass[12pt,french,letterpaper]{article}
+%déclaration du document 
+
+\usepackage[T1]{fontenc}
+%package pour police
+\usepackage[utf8]{inputenc}
+%package pour police
+
+\usepackage[document]{ragged2e}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{biblatex}
+\usepackage{csquotes}
+
+\usepackage{mathptmx}%choix de la police mathptmx = Times
+
+\usepackage[dvipsnames,svgnames]{xcolor}%chois pour les couleurs
+
+
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+  \origfigure[H]
+}{%
+  \endorigfigure
+}
+
+\usepackage{epigraph}
+\usepackage{fancyhdr}
+
+
+\providecommand{\subtitle}[1]{}
+\subtitle{Proposition de projet d'écriture}
+\author{Amélie    Levasseur-Raymond    Université de Montréal }
+\providecommand{\cours}[1]{}
+\cours{FRA3825 Pratiques de l'édition numérique}
+\cours{}
+\date{}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\rhead{}
+\cfoot{Page \thepage}
+
+\usepackage{graphicx}%package pour la gestion des images
+\graphicspath{ {./media/} }%chemin des figures
+
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+
+
+\else % if luatex or xelatex
+
+  \usepackage{unicode-math}
+
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={D'infographiste à archiviste -- Fusion entre le papier et le numérique : Proposition
+de projet d'écriture},
+            pdfauthor={Amélie   Levasseur-Raymond  },
+            colorlinks=true,
+            urlcolor= RoyalBlue, 
+	          linkcolor= Blue,
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+
+
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+% prevent hyphenation
+\hyphenpenalty=10000
+
+\begin{document}%début de mon document
+
+\begin{titlepage}%début de ma page de titre
+\begin{center}
+    \enlargethispage{2cm}
+    
+\includegraphics[width = 50mm]{logo} %ajout de l'image en taille logo
+%si le logo ne fonctionne pas : 
+%\scshape{Université de Montréal} %utilisation des small caps 
+
+\vspace*{3cm}
+\scshape\Huge D'infographiste à archiviste -- Fusion entre le papier et
+le numérique\\
+\normalfont\Large Proposition de projet d'écriture\\
+\large \vspace*{3cm}
+Amélie Levasseur-Raymond 
+\\
+\normalsize\vspace*{1cm}Travail présenté dans le cadre du cours FRA3825 - \em Pratiques
+de l'édition numérique
+ \normalfont donné par Margot Mellet 
+
+\vspace*{3cm}
+\end{center}
+
+\vspace*{\fill}
+\begin{flushright}
+\end{flushright}
+
+\begin{center}
+\scshape\normalsize\vspace*{1cm} 21-Mars-2023 --      Université de
+Montréal 
+\\
+\end{center}
+\end{titlepage}
+
+
+
+
+\newpage 
+
+\normalsize{\hypertarget{besoin-duxe9criture}{%
+\subsection{Besoin d'écriture}\label{besoin-duxe9criture}}
+
+Ayant passé 20 ans de ma carrière comme infographiste, ce sont surtout
+les aspects visuel et technique que j'aimerais explorer.
+\href{http://amelielr.ca}{Mon espace web actuel} est bâti avec le CMS
+Drupal, mais avec le temps, certaines fonctionnalités se sont brisées et
+ne me permettent plus d'afficher ou même de gérer mon site comme je
+l'avais conçu au départ. Cet espace personnel est donc dû pour une
+refonte, autant du point de vue technique afin de le simplifier, que
+dans son contenu pour y ajouter les branches issues de mon nouveau
+parcours en archivistique et en humanités numériques. Je souhaite y
+présenter les projets accomplis et en développement, mais aussi pouvoir
+m'en servir comme recueil de publications, d'outils ou de toute autre
+référence pertinente, question de regrouper et classer tout ce qui
+pourrait être utile à un seul et même endroit, un peu à la manière de
+Pinterest.
+
+Bien qu'à long terme je compte pouvoir y présenter ces multiples
+facettes et intérêts qui me définissent en me servant de cet espace
+comme portfolio et pour le partage d'information, je me concentrerai
+principalement, dans le cadre de cet exercice, à bâtir la structure et
+définir le style qui me représentera. Pour ce qui est du contenu, je
+m'attarderai d'abord à rapatrier l'information publiée sur ma page
+Facebook, \href{http://facebook.com/1nfograph3}{L'1nfograph3}, afin d'en
+assurer la pérennité. J'espère ensuite construire une page qui me
+permettra d'y rassembler diverses références que je pourrai classer par
+sujet. J'utiliserai pour se faire un recueil de lois monté dans Zotero
+dans le cadre du cours \emph{ARV3053-Aspects juridiques des archives et
+de l'information} suivi à la session d'hiver 2022. Le reste de
+l'arborescence (présentation, cv, portfolio, projets, etc.) ne sera que
+partiel selon le temps que j'aurai à y consacrer.
+
+\hypertarget{objectifs}{%
+\subsection{Objectifs}\label{objectifs}}
+
+Mon but sera donc principalement d'expérimenter les divers outils vus
+durant la session (et mes autres cours) afin de voir comment structurer
+une écriture sans devoir mettre de côté la créativité visuelle. Jusqu'à
+présent, je découvre que le langage Markdown est en effet facile
+d'utilisation pour sémantiser les textes, mais j'aimerais pousser plus
+loin afin de voir comment l'intégrer aux autres outils pour créer des
+pages ayant une structure plus libre et personnelle. Considérant la
+contrainte de thème, j'espère tout de même réussir à détourner le thème
+choisi (Cupper) afin de le rendre à mon image et adapté à mes besoins.
+Mes connaissances en html/css me seront utiles ici.
+
+\hypertarget{inspiration}{%
+\subsection{Inspiration}\label{inspiration}}
+
+Pour ce qui est de l'inspiration, je partirai bien sûr de l'image que
+j'ai déjà développée, mais je souhaite tout de même la mettre à jour en
+retravaillant la palette de couleurs. J'aime particulièrement les fonds
+plus foncés (pour leur économie d'énergie à l'affichage), comme c'est le
+cas dans le carnet d'Antoine Fauchié (Fauchié, 2019). La typographie
+restera la même, Roboto, mais je pense peut-être pencher davantage vers
+le Roboto Slab qui s'apparente à la police de caractère Courier pour
+aller vers un style plus rétro numérique, en souvenir de mes débuts sur
+WordPerfect il y a de cela bien longtemps déjà il me semble. Les formes
+géographiques, combinées à du code ASCII pour une touche numérique et
+une texture de papier pour rappeler les archives pourraient être une
+dualité intéressante.
+
+\begin{figure}
+\centering
+\includegraphics{media/ALR_logo.jpg}
+\caption{Mon image et logo actuels}
+\end{figure}
+
+\newpage
+
+\hypertarget{bibliographie}{%
+\subsection*{Bibliographie}\label{bibliographie}}
+\addcontentsline{toc}{subsection}{Bibliographie}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-blanc_design_2018}{}}%
+Blanc, J. (2018). Design Graphique, Code \& Recherche {[}Site{]}.
+\emph{Design graphique, code \& recherche}.
+\url{https://julie-blanc.fr/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-bon_tiers_1997}{}}%
+Bon, F. (1997). Le {Tiers} Livre, Web \& Littérature {[}Site{]}.
+\emph{Tiers Livre}. \url{http://www.tierslivre.net/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-casili_antonio_2009}{}}%
+Casili, A. (2009). Antonio {A}. {Casilli Site} {[}Site{]}. \emph{Antonio
+A. Casilli Site}. \url{https://www.casilli.fr/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-fauchie_quaternumnet_2019}{}}%
+Fauchié, A. (2019). {Quaternum.net} {[}\{Carnet\}{]}.
+\emph{quaternum.net}. \url{https://www.quaternum.net}
+
+\leavevmode\vadjust pre{\hypertarget{ref-mellet_blankblue_2020}{}}%
+Mellet, M. (2020). Blank.Blue {[}Carnet{]}. \emph{Blank.blue}.
+\url{https://blank.blue/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-perret_site_2020}{}}%
+Perret, A. (2020). {Site d'Arthur Perret} {[}\{Carnet\}{]}.
+\emph{arthurperret.fr}. \url{https://www.arthurperret.fr}
+
+\leavevmode\vadjust pre{\hypertarget{ref-savelli_fenetres_2007}{}}%
+Savelli, A. (2007). Fenêtres {Open Space} {[}Carnet{]}. \emph{Fenêtres
+Open Space}. \url{https://annesavelli.fr/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vitali-rosati_culture_2018}{}}%
+Vitali-Rosati, M. (2018). Culture Numérique. {Pour} Une Philosophie Du
+Numérique {[}Blogue{]}. \emph{Culture numérique.}
+\url{http://blog.sens-public.org/marcellovitalirosati/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-walsh_melanie_2016}{}}%
+Walsh, M. (2016). Melanie {Walsh} {[}Site{]}. \emph{Melanie Walsh}.
+\url{https://melaniewalsh.org/}
+
+\end{CSLReferences}}
+
+
+
+\end{document}
