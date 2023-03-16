@@ -7,7 +7,7 @@ teacher:
   - forname: Margot
     surname: Mellet
 title: Je(s)
-subtitle: une zine cinématographique
+subtitle: un zine cinématographique
 year: 2023
 month: Mars
 day: 21
