@@ -40,7 +40,5 @@ Mon inspiration culturelle principale pour ce projet est le livre d'Aurore Turbi
 
 Concernant mon inspiration éditoriale, je n'ai pas encore trouvé de site ressemblant exactement à ce que je souhaiterais mettre en place. La plupart des anthologies ou recueils de littérature francophone sont imprimés, et le site gallica de la BnF qui propose une sorte d'équivalent en ligne, comme ici avec ce [répertoire d'oeuvres d'écrivaines](https://gallica.bnf.fr/html/und/litteratures/femmes-de-lettres?mode=desktop), ne réédite pas numériquement les textes mais les numérise. 
 
-![photodereneevivien](/media/reneevivien.png)
-
 
 ## Bibliographie
