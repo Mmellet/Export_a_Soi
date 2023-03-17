@@ -39,3 +39,6 @@ Le but de mon projet serait donc à la fois éditorial en proposant une interact
 Mon inspiration culturelle principale pour ce projet est le livre d'Aurore Turbiau, Margot Lachkar, Camille Islert, Manon Berthier et Alexandre Antolin [*Écrire à l’encre violette - Littératures lesbiennes en France de 1900 à nos jours*](http://www.lecavalierbleu.com/livre/ecrire-a-lencre-violette/), qui propose une reconstitution et une analyse du corpus de la littérature lesbienne des XXème et XXIème siècles. Ce livre a été mon inspiration pour ce projet, et je m'appuierais sur leur corpus à l'avenir pour augmenter le nombre d'oeuvres présentes sur mon site.
 
 Concernant mon inspiration éditoriale, je n'ai pas encore trouvé de site ressemblant exactement à ce que je souhaiterais mettre en place. La plupart des anthologies ou recueils de littérature francophone sont imprimés, et le site gallica de la BnF qui propose une sorte d'équivalent en ligne, comme ici avec ce [répertoire d'oeuvres d'écrivaines](https://gallica.bnf.fr/html/und/litteratures/femmes-de-lettres?mode=desktop), ne réédite pas numériquement les textes mais les numérise. 
+
+
+## Bibliographie
