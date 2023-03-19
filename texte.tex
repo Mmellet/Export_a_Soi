@@ -1,0 +1,217 @@
+\documentclass[12pt,french,letterpaper]{article}
+%déclaration du document 
+
+\usepackage[T1]{fontenc}
+%package pour police
+\usepackage[utf8]{inputenc}
+%package pour police
+
+\usepackage[document]{ragged2e}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{biblatex}
+\usepackage{csquotes}
+
+\usepackage{mathptmx}%choix de la police mathptmx = Times
+
+\usepackage[dvipsnames,svgnames]{xcolor}%chois pour les couleurs
+
+
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+  \origfigure[H]
+}{%
+  \endorigfigure
+}
+
+\usepackage{epigraph}
+\usepackage{fancyhdr}
+
+
+\providecommand{\subtitle}[1]{}
+\subtitle{Hymne à l'enfant du conjoint}
+\author{Alaska    Malo    Université de Montréal }
+\providecommand{\cours}[1]{}
+\cours{FRA3825 Pratiques de l'édition numérique}
+\cours{}
+\date{}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\rhead{}
+\cfoot{Page \thepage}
+
+\usepackage{graphicx}%package pour la gestion des images
+\graphicspath{ {./media/} }%chemin des figures
+
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+
+
+\else % if luatex or xelatex
+
+  \usepackage{unicode-math}
+
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={L'Anti-mère : Hymne à l'enfant du conjoint},
+            pdfauthor={Alaska ,  Malo,  },
+            colorlinks=true,
+            urlcolor= RoyalBlue, 
+	          linkcolor= Blue,
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+
+
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+\begin{document}%début de mon document
+
+\begin{titlepage}%début de ma page de titre
+\begin{center}
+    \enlargethispage{2cm}
+    
+\includegraphics[width = 50mm]{logo} %ajout de l'image en taille logo
+%si le logo ne fonctionne pas : 
+%\scshape{Université de Montréal} %utilisation des small caps 
+
+\vspace*{3cm}
+\scshape\Huge L'\emph{Anti-mère}\\
+\normalfont\Large Hymne à l'enfant du conjoint\\
+\large \vspace*{3cm}
+Alaska,  Malo,  
+\\
+\normalsize\vspace*{1cm}Travail présenté dans le cadre du cours FRA3825 - \em Pratiques
+de l'édition numérique
+ \normalfont donné par Margot Mellet 
+
+\vspace*{3cm}
+\end{center}
+
+\vspace*{\fill}
+\begin{flushright}
+\end{flushright}
+
+\begin{center}
+\scshape\normalsize\vspace*{1cm} 21-Mars-2023 --      Université de
+Montréal 
+\\
+\end{center}
+\end{titlepage}
+
+
+
+
+\newpage 
+
+\normalsize{\hypertarget{description-du-thuxe8me}{%
+\subsection{Description du thème}\label{description-du-thuxe8me}}
+
+Je parlerai d'abord de mon ancienne belle-mère~--~qui a l'étrange
+particularité d'avoir le même prénom que ma mère~-- et de ses enfants.
+Nous n'avons jamais eu une très bonne relation par leur amour pour le
+sport et leurs tendances égocentriques ainsi que mes goûts artistiques
+et ce qui est possiblement mon autisme. Je mettrais en lumière certains
+souvenirs, mes perceptions sur les événements qui ont lieu pendant les
+17 ans de couple de mon père et de cette \emph{Anti-mère}.
+
+Ensuite, si j'ai le temps, je prendrais alors ma vraie mère, qui est
+rendue à prendre le rôle de l'Anti-mère par son jugement dit «~terf~»,
+par son refus de respecter mon nom et mon identité de genre.
+L'\emph{Anti-mère} est à la fois cette figure maternelle qui demande le
+respect mais ne le redonne pas en retour. C'est ce qu'est devenue ma
+mère pendant les dernières années, c'est ce qu'était cette ancienne
+belle-mère.
+
+\hypertarget{techniques-et-uxe9dition}{%
+\subsection{Techniques et édition}\label{techniques-et-uxe9dition}}
+
+Je compte aussi faire ce travail sur le modèle de la Fabrique, pour
+donner une allure de recueil de nouvelles. Aussi, cela avance très bien
+avec ma compétence~--~ou plutôt mon incompétence~--~informatique et
+m'éviterait de causer plus de trouble à mon ordinateur.
+
+Je compte aussi utiliser expérimenter avec l'\emph{italique} pour
+certains termes, dont «~\emph{Anti-mère}~» ou la dérivation de prénoms
+de ceux qui ont inspirés ce futur projet. Pour donner un autre exemple,
+le nom de cette ancienne belle-mère sera donc remplacé par
+«~\emph{Einna}~», ou le nom de sa fille sera «~\emph{Esor}~». C'est une
+méthode d'écriture que j'ai longtemps adopté et par cette ancienneté, je
+ne compte pas m'en débarrasser de sitôt.
+
+\hypertarget{inspirations-culturelles}{%
+\subsection{Inspirations culturelles}\label{inspirations-culturelles}}
+
+J'aimerais m'inspirer de certain.es chanteur.euses avec certaines
+images. Je risque de faire allusion au groupe Against The Current, dont
+leurs chansons m'ont grandement aidé avec mes émotions pendant mon
+adolescence, plus précisément depuis mes 14 ans. Je compte citer
+quelques vers avant d'introduire mes textes, comme pour ajouter ce qui
+fut mon antitode.
+
+Je compte aussi éditer des textes sur les belles-mères écrits par des
+auteurs morts depuis plus de 70 ans. Par exemple, pour être dans
+l'évidence, j'empruntrerais les contes «~Cendrillon~» à Charles Perrault
+et «~Blanche-Neige~» aux Frères Grimm, ou encore des extraits de
+\emph{Phèdre} de Jean Racine. Dans ces extraits, je ne laisserai pas une
+parole de chanson, pour ne pas \emph{polluer} le texte d'origine.}
+
+
+
+\end{document}
