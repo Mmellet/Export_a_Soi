@@ -1,0 +1,291 @@
+\documentclass[12pt,french,letterpaper]{article}
+%déclaration du document 
+
+\usepackage[T1]{fontenc}
+%package pour police
+\usepackage[utf8]{inputenc}
+%package pour police
+
+\usepackage[document]{ragged2e}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{biblatex}
+\usepackage{csquotes}
+
+\usepackage{mathptmx}%choix de la police mathptmx = Times
+
+\usepackage[dvipsnames,svgnames]{xcolor}%chois pour les couleurs
+
+
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+  \origfigure[H]
+}{%
+  \endorigfigure
+}
+
+\usepackage{epigraph}
+\usepackage{fancyhdr}
+
+
+\providecommand{\subtitle}[1]{}
+\subtitle{un zine cinématographique}
+\author{Ludi    Marwood    Université de Montréal }
+\providecommand{\cours}[1]{}
+\cours{FRA3825 Pratiques de l'édition numérique}
+\cours{}
+\date{}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\rhead{}
+\cfoot{Page \thepage}
+
+\usepackage{graphicx}%package pour la gestion des images
+\graphicspath{ {./media/} }%chemin des figures
+
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+
+
+\else % if luatex or xelatex
+
+  \usepackage{unicode-math}
+
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={Je(s) : un zine cinématographique},
+            pdfauthor={Ludi ,  Marwood,  },
+            colorlinks=true,
+            urlcolor= RoyalBlue, 
+	          linkcolor= Blue,
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+
+
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+\begin{document}%début de mon document
+
+\begin{titlepage}%début de ma page de titre
+\begin{center}
+    \enlargethispage{2cm}
+    
+\includegraphics[width = 50mm]{logo} %ajout de l'image en taille logo
+%si le logo ne fonctionne pas : 
+%\scshape{Université de Montréal} %utilisation des small caps 
+
+\vspace*{3cm}
+\scshape\Huge Je(s)\\
+\normalfont\Large un zine cinématographique\\
+\large \vspace*{3cm}
+Ludi,  Marwood,  
+\\
+\normalsize\vspace*{1cm}Travail présenté dans le cadre du cours FRA3825 - \em Pratiques
+de l'édition numérique
+ \normalfont donné par Margot Mellet 
+
+\vspace*{3cm}
+\end{center}
+
+\vspace*{\fill}
+\begin{flushright}
+\end{flushright}
+
+\begin{center}
+\scshape\normalsize\vspace*{1cm} 21-Mars-2023 --      Université de
+Montréal 
+\\
+\end{center}
+\end{titlepage}
+
+
+
+
+\newpage 
+
+\normalsize{\hypertarget{point-de-duxe9part}{%
+\subsection{Point de départ}\label{point-de-duxe9part}}
+
+Mon projet est motivé par un projet externe à ce cours : la création
+d'un zine de critiques cinématographiques avec des ami.e.s. Il me semble
+pertinent de le présenter en deux parties: la première abordera le
+concept général de notre zine (le fil rouge), la deuxième exposera les
+volontés et questionnements concernant la création d'une plateforme
+numérique pour ée zine (nos besoins).
+
+\hypertarget{le-projet}{%
+\subsection{Le projet}\label{le-projet}}
+
+Nous étudions tous.te.s en cinéma et écrivons des critiques
+cinématographique. Nous avons remarqué que la critique actuelle était
+très limitée. Tout d'abord par une standardisation de sa forme : résumé
+de l'œuvre, analyse de l'objet filmique, conclusion passant par une
+petite opinion du film. Puis dans sa prise de position : l'influence des
+maisons de production aujourd'hui (entres autres) exerce un pouvoir de «
+censure » sur les critiques cinématographiques, les empêchant de donner
+réellement un avis sur les films sous peine de se voir refuser l'entrée
+dans des salles de cinéma ou à des festivals (comme l'ont vécu Alexandre
+Fontaine-Rousseau et Denis Côté). Enfin par une volonté « d'objectivité
+» dans les critiques, terme que nous remettons en cause non seulement
+car il n'est pas possible de s'absoudre de soi-même mais également parce
+que refuser de se positionner est plus « subjectif » qu'objectif puisque
+c'est un refus de regarder un objet dans ce qu'il propose à travers de
+ressentis « objectifs ». Notre projet est donc de créer un zine qui
+travaillera des critiques libérées dans leurs opinions, comme dans leurs
+formes qui auront pour volonté de refléter l'objet filmique étudié
+(n'est-ce pas Godard qui disait qu'il fallait passer par la poésie pour
+parler des films ?)
+
+\hypertarget{le-site-web}{%
+\subsection{Le site web}\label{le-site-web}}
+
+Afin de ne pas être soumis.e.s aux « contraintes » des maisons de
+production ou de tomber dans une logique de capitalisation de la
+culture, nous souhaitons que notre projet reste à petite échelle, nous
+ne publierons des zines qu'en petites quantités, feront attention à nos
+choix matériels (papiers recyclés,\ldots) et de distribution. Nous nous
+sommes demandé quelle serait l'utilité et les enjeux éthiques de créer
+une plateforme numérique dans laquelle nous publierions des critiques.
+Deux points sont ressortis de ces questionnements : le premier étant
+que, si plateforme numérique il y avait, cette dernière ne devrait pas
+passer par des plateformes dominantes (Google, etc) afin de ne pas être
+soumise à des instances que nous rejetons. Le deuxième point était :
+comment accueillir le numérique sans tomber dans la surproduction et la
+sur-publication ? Comment créer une plateforme qui nous permettrait de
+garder ce rythme restreint et intime que nous voulons appliquer au zine
+? Nous voulons mettre en avant chaque critique sans tomber dans une
+logique de flux, lui laissant une visibilité, une singularité, ne
+hiérarchisant pas les films (par exemple, un classement des films par
+leurs dates de sortie/mouvements cinématographiques auxquels ils se
+rattachent, aurait comme effets une supériorité cinéphile de certains
+films étudiés, ces derniers jouissant du statut de « films cultes »), en
+bref nous voulons laisser à chaque critique ainsi qu'à chaque objet
+filmique la place d'exister dans sa proposition .
+
+Ces deux questionnements me permettront, pour le premier, de travailler
+le format de la plateforme, qui passera par des logiciels gratuits et vu
+en cours, et le deuxième la sémantisation de la plateforme. J'aimerais
+créer une page d'accueil sur laquelle les critiques ne seront pas «
+classées » ou « listées » mais rassemblées en une sorte de patchwork ou
+de mosaïque d'affiches de films, classées « aléatoirement » comme cela
+nous chantera (par couleur, assemblées pour créer des formes,etc). Ainsi
+un.e visiteur.euse du site pourra cliquer sur l'affiche qu'iel souhaite
+et se rendre sur la critique du film. Au fil du temps, nous pourrons
+rajouter des films à cette mosaïque, déplacer certaines affiches,
+trouver de nouvelles formes, etc. Tout en gardant sa singularité,
+l'affiche du film participera à la création de quelque chose de plus
+grand.
+
+\hypertarget{inspirations}{%
+\subsection{Inspirations}\label{inspirations}}
+
+Je m'inspirerai notamment des plateformes web de critiques de
+\href{https://www.panorama-cinema.com/V2/index.php}{Panorama Cinéma},
+\href{https://revue24images.com}{24images}, la revue française
+\href{https://tsounami.fr}{Tsunami} mais surtout la revue
+\href{https://horschamp.qc.ca}{Hors champ} qui nous a inspiré dans notre
+projet, notamment dans sa volonté d'explorer le cinéma (ou plutôt les
+écritures du cinéma) par différentes formes.
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-blanc_design_2018}{}}%
+Blanc, J. (2018). Design Graphique, Code \& Recherche {[}Site{]}.
+\emph{Design graphique, code \& recherche}.
+\url{https://julie-blanc.fr/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-bon_tiers_1997}{}}%
+Bon, F. (1997). Le {Tiers} Livre, Web \& Littérature {[}Site{]}.
+\emph{Tiers Livre}. \url{http://www.tierslivre.net/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-casili_antonio_2009}{}}%
+Casili, A. (2009). Antonio {A}. {Casilli Site} {[}Site{]}. \emph{Antonio
+A. Casilli Site}. \url{https://www.casilli.fr/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-fauchie_quaternumnet_2019}{}}%
+Fauchié, A. (2019). {Quaternum.net} {[}\{Carnet\}{]}.
+\emph{quaternum.net}. \url{https://www.quaternum.net}
+
+\leavevmode\vadjust pre{\hypertarget{ref-mellet_blankblue_2020}{}}%
+Mellet, M. (2020). Blank.Blue {[}Carnet{]}. \emph{Blank.blue}.
+\url{https://blank.blue/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-perret_site_2020}{}}%
+Perret, A. (2020). {Site d'Arthur Perret} {[}\{Carnet\}{]}.
+\emph{arthurperret.fr}. \url{https://www.arthurperret.fr}
+
+\leavevmode\vadjust pre{\hypertarget{ref-savelli_fenetres_2007}{}}%
+Savelli, A. (2007). Fenêtres {Open Space} {[}Carnet{]}. \emph{Fenêtres
+Open Space}. \url{https://annesavelli.fr/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vitali-rosati_culture_2018}{}}%
+Vitali-Rosati, M. (2018). Culture Numérique. {Pour} Une Philosophie Du
+Numérique {[}Blogue{]}. \emph{Culture numérique.}
+\url{http://blog.sens-public.org/marcellovitalirosati/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-walsh_melanie_2016}{}}%
+Walsh, M. (2016). Melanie {Walsh} {[}Site{]}. \emph{Melanie Walsh}.
+\url{https://melaniewalsh.org/melaniewalsh.org/}
+
+\end{CSLReferences}}
+
+
+
+\end{document}
