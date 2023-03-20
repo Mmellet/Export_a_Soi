@@ -7,7 +7,7 @@ teacher:
   - forname: Margot
     surname: Mellet
 title: Poèmes à moi
-subtitle: sous-titre
+subtitle: 
 year: 2023
 month: Mars
 day: 21
