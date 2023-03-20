@@ -54,3 +54,6 @@ Pour le travail final, j’aimerais créer un espace numérique dans lequel je p
 ## Inspiration et objectifs ##
 
 Mes poèmes ont diverses sources d’inspiration, mais la plupart s’inspirent de mon vécu, comme le poème qui a été donné en exemple. Je n’ai jamais partagé avec une autre personne que moi-même la plupart de ces poèmes. Ce carnet d’écriture numérique sera donc une bonne occasion de la faire. Mon objectif pour ce travail final est donc de nature personnelle et consiste à supprimer ou du moins à réduire ma peur de partager avec d’autres personnes, ce que j’écris. 
+
+
+## Bibliographie ##
