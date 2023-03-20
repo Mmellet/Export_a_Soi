@@ -7,7 +7,6 @@ teacher:
   - forname: Margot
     surname: Mellet
 title: Mon carnet d'écriture
-subtitle: - 
 year: 2023
 month: Mars
 day: 21
