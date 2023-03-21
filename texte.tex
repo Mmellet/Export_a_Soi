@@ -1,0 +1,282 @@
+\documentclass[12pt,french,letterpaper]{article}
+%déclaration du document 
+
+\usepackage[T1]{fontenc}
+%package pour police
+\usepackage[utf8]{inputenc}
+%package pour police
+
+\usepackage[document]{ragged2e}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{biblatex}
+\usepackage{csquotes}
+
+\usepackage{mathptmx}%choix de la police mathptmx = Times
+
+\usepackage[dvipsnames,svgnames]{xcolor}%chois pour les couleurs
+
+
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+  \origfigure[H]
+}{%
+  \endorigfigure
+}
+
+\usepackage{epigraph}
+\usepackage{fancyhdr}
+
+
+\providecommand{\subtitle}[1]{}
+\subtitle{Renée Vivien et Sappho}
+\author{Emma    Pierron    Université de Montréal }
+\providecommand{\cours}[1]{}
+\cours{FRA3825 Pratiques de l'édition numérique}
+\cours{}
+\date{}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\rhead{}
+\cfoot{Page \thepage}
+
+\usepackage{graphicx}%package pour la gestion des images
+\graphicspath{ {./media/} }%chemin des figures
+
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+
+
+\else % if luatex or xelatex
+
+  \usepackage{unicode-math}
+
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={Littérature sapphique francophone : Renée Vivien
+et Sappho},
+            pdfauthor={Emma ,  Pierron,  },
+            colorlinks=true,
+            urlcolor= RoyalBlue, 
+	          linkcolor= Blue,
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+
+
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+\begin{document}%début de mon document
+
+\begin{titlepage}%début de ma page de titre
+\begin{center}
+    \enlargethispage{2cm}
+    
+\includegraphics[width = 50mm]{logo} %ajout de l'image en taille logo
+%si le logo ne fonctionne pas : 
+%\scshape{Université de Montréal} %utilisation des small caps 
+
+\vspace*{3cm}
+\scshape\Huge Littérature sapphique francophone\\
+\normalfont\Large Renée Vivien et Sappho\\
+\large \vspace*{3cm}
+Emma,  Pierron,  
+\\
+\normalsize\vspace*{1cm}Travail présenté dans le cadre du cours FRA3825 - \em Pratiques
+de l'édition numérique
+ \normalfont donné par Margot Mellet 
+
+\vspace*{3cm}
+\end{center}
+
+\vspace*{\fill}
+\begin{flushright}
+\end{flushright}
+
+\begin{center}
+\scshape\normalsize\vspace*{1cm} 21-Mars-2023 --      Université de
+Montréal 
+\\
+\end{center}
+\end{titlepage}
+
+
+
+
+\newpage 
+
+\normalsize{\hypertarget{description-du-projet}{%
+\subsection{\texorpdfstring{\textbf{Description du
+projet}}{Description du projet}}\label{description-du-projet}}
+
+Pour mon projet final, je souhaiterais créer un site web proposant une
+réédition numérique des poèmes de la poétesse fançaise du XIXème siècle,
+\href{https://fr.wikipedia.org/wiki/Ren\%C3\%A9e_Vivien}{Renée Vivien},
+en les mettant en lien avec
+\href{https://fr.wikisource.org/wiki/Sapho_(Vivien)}{sa traduction de
+Sappho}. Par la suite, je souhaiterais le transformer en sorte de
+répertoire de la littérature sapphique francophone, mélant réédition de
+textes libres de droits et bibliographies d'auteur.ice.s dont les livres
+sont à la vente.
+
+J'aimerais me concentrer principalement sur une édition plus interactive
+pour les lecteur.ice.s afin de mettre en avant ce qu'une édition
+numérique de textes anciens peut apporter à l'oeuvre, comparée à une
+édition imprimée plus classique. J'aimerais proposer si possible une
+fonction permettant de faire une recherche par mot pour naviguer dans
+les poèmes/textes, plutôt qu'uniquement une recherche par nom ou titre.
+La.e Lecteur.ice.s pourrait ainsi voir s'afficher tous les textes
+comportant ce mot. Je vais probablement devoir me former un peu à un
+autre langage à côté des outils utilisés dans le cadre du cours, comme
+HTML voir Python, afin de proposer cette interactivité supplémentaire.
+J'aurais également souhaité rendre disponible la fonctionnalité
+permettant de convertir les textes en PDF imprimable pour le lectorat,
+si cela est faisable dans le temps disponible pour mettre en ligne le
+site.
+
+Au niveau de l'organisation de mon site, j'aimerais proposer une section
+comportant les textes et poèmes des auteur.rice.s et une autre section
+regroupant une biobibliographie des auteur.rice.s. Je souhaiterais
+également proposer à l'avenir des retranscriptions d'interviews.
+
+Au niveau esthétique, j'aimerais proposer un site en accord avec le
+genre poétique de Renée Vivien et de Sappho et des éditions originales
+de leurs oeuvres : au niveau des typographies, des couleurs (je voudrais
+mettre en avant le violet associé généralement aux personnes
+lesbiennes), de la mise en forme du texte\ldots etc.
+
+Le but de mon projet serait donc à la fois éditorial en proposant une
+interactivité propre à l'édition numérique, mais également culturel
+puisque la littérature lesbienne, même si elle commence à arriver sur le
+devant de la scène, reste une littérature marginalisée.
+
+\hypertarget{inspirations-pour-le-projet}{%
+\subsection{\texorpdfstring{\textbf{Inspirations pour le
+projet}}{Inspirations pour le projet}}\label{inspirations-pour-le-projet}}
+
+Mon inspiration culturelle principale pour ce projet est le livre
+d'Aurore Turbiau, Margot Lachkar, Camille Islert, Manon Berthier et
+Alexandre Antolin
+\href{http://www.lecavalierbleu.com/livre/ecrire-a-lencre-violette/}{\emph{Écrire
+à l'encre violette - Littératures lesbiennes en France de 1900 à nos
+jours}}, qui propose une reconstitution et une analyse du corpus de la
+littérature lesbienne des XXème et XXIème siècles. Ce livre a été mon
+inspiration pour ce projet, et je m'appuierais sur leur corpus à
+l'avenir pour augmenter le nombre d'oeuvres présentes sur mon site.
+
+Concernant mon inspiration éditoriale, je n'ai pas encore trouvé de site
+ressemblant exactement à ce que je souhaiterais mettre en place. La
+plupart des anthologies ou recueils de littérature francophone sont
+imprimés, et le site gallica de la BnF qui propose une sorte
+d'équivalent en ligne, comme ici avec ce
+\href{https://gallica.bnf.fr/html/und/litteratures/femmes-de-lettres?mode=desktop}{répertoire
+d'oeuvres d'écrivaines}, ne réédite pas numériquement les textes mais
+les numérise.
+
+\newpage
+
+\hypertarget{bibliographie}{%
+\subsection*{Bibliographie}\label{bibliographie}}
+\addcontentsline{toc}{subsection}{Bibliographie}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-blanc_design_2018}{}}%
+Blanc, J. (2018). Design Graphique, Code \& Recherche {[}Site{]}.
+\emph{Design graphique, code \& recherche}.
+\url{https://julie-blanc.fr/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-bon_tiers_1997}{}}%
+Bon, F. (1997). Le {Tiers} Livre, Web \& Littérature {[}Site{]}.
+\emph{Tiers Livre}. \url{http://www.tierslivre.net/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-casili_antonio_2009}{}}%
+Casili, A. (2009). Antonio {A}. {Casilli Site} {[}Site{]}. \emph{Antonio
+A. Casilli Site}. \url{https://www.casilli.fr/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-fauchie_quaternumnet_2019}{}}%
+Fauchié, A. (2019). {Quaternum.net} {[}\{Carnet\}{]}.
+\emph{quaternum.net}. \url{https://www.quaternum.net}
+
+\leavevmode\vadjust pre{\hypertarget{ref-mellet_blankblue_2020}{}}%
+Mellet, M. (2020). Blank.Blue {[}Carnet{]}. \emph{Blank.blue}.
+\url{https://blank.blue/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-perret_site_2020}{}}%
+Perret, A. (2020). {Site d'Arthur Perret} {[}\{Carnet\}{]}.
+\emph{arthurperret.fr}. \url{https://www.arthurperret.fr}
+
+\leavevmode\vadjust pre{\hypertarget{ref-savelli_fenetres_2007}{}}%
+Savelli, A. (2007). Fenêtres {Open Space} {[}Carnet{]}. \emph{Fenêtres
+Open Space}. \url{https://annesavelli.fr/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vitali-rosati_culture_2018}{}}%
+Vitali-Rosati, M. (2018). Culture Numérique. {Pour} Une Philosophie Du
+Numérique {[}Blogue{]}. \emph{Culture numérique.}
+\url{http://blog.sens-public.org/marcellovitalirosati/}
+
+\leavevmode\vadjust pre{\hypertarget{ref-walsh_melanie_2016}{}}%
+Walsh, M. (2016). Melanie {Walsh} {[}Site{]}. \emph{Melanie Walsh}.
+\url{https://melaniewalsh.org/melaniewalsh.org/}
+
+\end{CSLReferences}}
+
+
+
+\end{document}
